@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    min-width: 100vh;
+    padding: 17rem 14% 9rem;
+    margin: 0 auto;
+    scroll-snap-align: start;
+}
+
+body {
+    background-color: #152d15; 
+    color: #333; 
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+/* barra de navegação */
+header {
+    background: #003b2f; 
+    padding: 10px 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(94, 93, 93, 0.2);
+}
+
+/* Lista de navegação */
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Itens do menu */
+
+ul#elementosNav li,
+ul#links li {
+    margin: 0 35px;
+}
+
+/* Links do menu */
+ul#links li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Ícone no link */
+.material-symbols-outlined {
+    margin-left: 5px;
+}
+
+/* Logo */
+#imgLogo {
+    height: 30px;
+}
+
+/* Seções principais */
+#firstSession{
+    background-color: #003b2f; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    padding-top: 0px;
+    min-height: 90vh;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dividir o espaço em 50% */
+.width-50 {
+    width: 50%;
+}
+
+/* Texto das seções */
+#firstSession .leftTextSession {
+    max-width: 40%;
+}
+
+#desportoUPorto {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #f4b400; 
+    font-weight: bold;
+}
+
+.leftTextSession h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+/* Imagem */
+#firstSession .width-50 {
+    position: relative;
+}
+
+#imgPessoas {
+    max-width: 130%;
+    bottom: -400px;
+    height: auto;
+    position: absolute;
+}
+
+/* Botão de ação */
+.leftTextSession a {
+    background: #005599;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.leftTextSession a:hover {
+    background: #003366;
+}
+
+
+#secondSession {
+    background-color: #d71931;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    min-height: 90vh;
+    color: white;
+    position: relative;
+}
+
+.leftTextSession {
+    width: 50%;
+    text-align: left;
+}
+
+.leftTextSession #desportoUPortoWhite {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.leftTextSession h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.leftTextSession p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.leftTextSession strong {
+    font-weight: bold;
+}
+
+.leftTextSession a {
+    display: inline-flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.leftTextSession a:hover {
+    background-color: white;
+    color: black;
+}
+
+.imgMulher {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.imgMulher img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* footer  */
+
+#footer {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 8%;
+    flex-wrap: wrap;
+}
+
+.textSession {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    background-color: #111;
+}
+
+.icons a img {
+    width: 15px;
+    height: 15px;
+}
+
+
+#logosDiversas {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+
+.sessaoLogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sessaoLogos h5 {
+    color: rgb(75, 73, 73);
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    text-transform: uppercase;
+}
+
+.sessaoLogos img {
+    max-width: 250px;
+}
+
+.contactos {
+    max-width: 250px;
+    margin-top: 95px;
+}
+
+.contactos h5 {
+    color: rgb(77, 76, 76);
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.contactos p, .contactos a {
+    color: #ccc;
+    font-size: 13px;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.contactos a:hover {
+    color: #fff;
+}
+
+.contactos iframe {
+    width: 100%;
+    max-width: 250px;
+    height: 150px;
+    margin-top: 10px;
+    border: 0;
+}
+
+#copyright {
+    display: flex;
+    align-items: center; 
+    padding: 15px 20px; 
+    border-top: 1px solid rgba(159, 159, 159, 0.2); 
+    font-size: 12px; 
+    color: rgb(160, 160, 160);
+    background-color: #050505;
+}
+
+#firstCP, #secondCP {
+    flex: 1;
+    text-align: center; 
+}
+
+#firstCP {
+    text-align: center;
+}
+
+#secondCP {
+    text-align: center;
+}
+
+
+/* Instalações */
+
+#firstSessionInst {
+    text-align: center;
+    margin-bottom: 40px;
+    background-image: url("images/football-pitch.jpg");
+    margin-bottom: 1px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+
+#desportoUPorto {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFCC00;
+    text-transform: uppercase;
+    
+}
+
+.highlight {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(243, 240, 240);
+}
+
+/* SecondSession */
+
+#secondSessionInst {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 100px;
+    background-color: rgb(254, 254, 254);
+}
+
+.width-50 {
+    width: 48%;
+}
+
+#desportoUPortoBlack {
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.blackHighlight {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
+
+#videoCDUP iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* thirdSessionInst - */
+
+#thirdSessionInst {
+    position: relative;
+    width: 100vw; 
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+.instalacoes {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.instalacoes > div {
+    flex: 1; 
+    height: 350px; 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#instalacao1 {
+    background-image: url('images/estadio-univ-porto.jpg');
+}
+
+#instalacao2 {
+    background-image: url('images/ginasio-Boa-Hora1-2_site.jpg');
+}
+
+#instalacao3 {
+    background-image: url('images/Pavilhao-Luis-Falcao-2.jpg');
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Texto h2 */
+.textContent h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Botão e seta */
+
+.textContent a {
+    display: inline-flex;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.textContent a:hover {
+    background: rgb(230, 229, 229);
+    color: black;
+}
+
+/* Estádio  */
+
+#firstSessionEst {
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
+    background-image: url('images/estadio-univ-porto.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 5%; 
+}
+
+.leftTextSessionEst {
+    max-width: 600px; 
+    color: rgb(255, 255, 255);
+}
+
+#desportoUPorto {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+h1.highlight {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* segunda sessão */
+
+#secondSessionEst {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 8%;
+}
+
+#secondSessionEst p {
+    color: #111;
+    margin-bottom: 30px;
+}
+.width-50 {
+    width: 48%;
+}
+
+.leftTextSession {
+    max-width: 600px; 
+}
+
+#videoCDUP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#videoCDUP iframe {
+    width: 100%; 
+    max-width: 560px;
+    height: 315px;
+}
+
+/* Melhorando a hierarquia do texto */
+
+#desportoUPortoBlack {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+    display: block;
+    text-transform: uppercase;
+    color: rgb(49, 49, 49);
+}
+
+.blackHighlightEst {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.desportoUPortoGreen {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2D7D46; 
+    margin-top: 20px;
+}
+
+.infoText {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
